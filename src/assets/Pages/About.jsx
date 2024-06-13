@@ -1,95 +1,163 @@
-import React from 'react'
-import photo from '/src/AboutMe.webp'
-
+import React from 'react';
+import journeyImage from '/src/skill1.svg'; 
+import skillsImage from '/src/skill2.svg';
+import htmlLogo from '/src/HTML.svg';
+import cssLogo from '/src/CSS.svg';
+import jsLogo from '/src/Javascript.svg';
+import bootstrapLogo from '/src/Bootstrap.svg';
+import reactLogo from '/src/React.svg';
+import tailwindLogo from '/src/Tailwind.svg';
+import vscodeLogo from '/src/VsCode.svg';
+import githubLogo from '/src/GitHub.svg';
+import academicImage from'/src/Acadamic.svg'
+import projectsImage from '/src/skill3.svg'
+import futureImage from '/src/Future.svg'
 
 const About = () => {
   return (
-    <div>
-   <div className='bg-[#fff7ed] w-full py-[40px]   '>
+    <section className="bg-[#B85042] text-gray-300 py-12 px-6 sm:px-10 md:py-20 md:px-24">
+      <div className="max-w-5xl mx-auto space-y-16">
+        {/* About Me Section */}
+        <div className="text-center">
+          <h2 className="text-3xl sm:text-5xl md:text-5xl font-bold text-[#E7E8D1] mb-8">
+            About Me
+          </h2>
+          <p className="text-lg sm:text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto text-[#E7E8D1]">
+            I am currently pursuing my Master of Computer Applications (MCA) from Manipal University Jaipur.
+            Additionally, I am undertaking a 12-month certification course in Full Stack Development at the Ducat Noida branch.
+            This combination of academic learning and hands-on training is providing me with a comprehensive understanding of the field.
+          </p>
+        </div>
 
- 
-   <section className='container mx-auto flex flex-col md:flex-row items-center  '>
+        {/* Academic Background Section */}
+        <div className="md:flex items-center space-y-8 md:space-y-0 md:space-x-8">
+          <div className="md:w-1/2 mb-8 md:mb-0 p-6 bg-transparent border border-blue-600 rounded-lg transform transition hover:scale-105 hover:bg-blue-600 hover:bg-opacity-20 shadow-lg">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-white">
+              Academic Background
+            </h3>
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+             
+              From a young age, I was fascinated by how computers work and the endless possibilities they offer.
+              At Manipal University Jaipur, I am delving into advanced topics in software development, algorithms, and system design.
+              This academic pursuit is complemented by practical training in full-stack development, where I am gaining hands-on experience with cutting-edge technologies.
+            </p>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <img src={academicImage} alt="Academic Background" className="w-full h-auto max-w-md" />
+          </div>
+        </div>
 
+        {/* Skills Section */}
+        <div className="md:flex items-center space-y-8 md:space-y-0 md:space-x-8">
+          <div className="md:w-1/2 mb-8 md:mb-0 p-6 bg-transparent border border-indigo-600 rounded-lg transform transition hover:scale-105 hover:bg-indigo-600 hover:bg-opacity-20 shadow-lg">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-white">
+              Skills
+            </h3>
+            <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg md:text-xl">
+              <li>Front-End Development: Proficient in HTML, CSS, and JavaScript, with a focus on creating intuitive and engaging user experiences.</li>
+              <li>React Framework: Experienced in building responsive, high-performance web applications using React and its ecosystem.</li>
+              <li>Full-Stack Knowledge: Working knowledge of back-end technologies and databases, enabling seamless integration across the stack.</li>
+            </ul>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <img src={skillsImage} alt="Skills" className="w-full h-auto max-w-md" />
+          </div>
+        </div>
 
-    <div className='text-content md:w-1/2 ' >
-    <img src={photo} alt="Example" className=" w-[450px] h-auto rounded-lg"/>
+        {/* Projects Section */}
+        <div className="md:flex md:flex-row-reverse items-center space-y-8 md:space-y-0 md:space-x-8 md:space-x-reverse">
+          <div className="md:w-1/2 mb-8 md:mb-0 p-6 bg-transparent border border-purple-600 rounded-lg transform transition hover:scale-105 hover:bg-purple-600 hover:bg-opacity-20 shadow-lg">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-white">
+              Projects
+            </h3>
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+              Throughout my training and education, I have been involved in numerous projects that have allowed me to apply my skills in real-world scenarios.
+              From developing interactive websites to creating complex web applications, each project has been a stepping stone in honing my abilities.
+              Working on these projects has not only solidified my understanding of core concepts but also taught me the importance of collaboration, problem-solving, and innovation.
+            </p>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <img src={projectsImage} alt="Projects" className="w-full h-auto max-w-md" />
+          </div>
+        </div>
 
-    </div>
+        {/* Journey Section */}
+        <div className="md:flex items-center space-y-8 md:space-y-0 md:space-x-8">
+          <div className="md:w-1/2 mb-8 md:mb-0 p-6 bg-transparent border border-green-600 rounded-lg transform transition hover:scale-105 hover:bg-green-600 hover:bg-opacity-20 shadow-lg">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-white">
+              My Journey
+            </h3>
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+              My journey into technology started with a curiosity about how things work and a drive to create impactful solutions.
+              This curiosity has grown into a passion for web development, specializing in front-end development, where I focus on creating interfaces that are both functional and visually appealing.
+              My educational background and hands-on experiences have provided me with a solid foundation in computer science principles and a deep understanding of modern web technologies.
+            </p>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <img src={journeyImage} alt="Journey" className="w-full h-auto max-w-md" />
+          </div>
+        </div>
 
+        {/* Future Goals Section */}
+        <div className="md:flex md:flex-row-reverse items-center space-y-8 md:space-y-0 md:space-x-8 md:space-x-reverse">
+          <div className="md:w-1/2 mb-8 md:mb-0 p-6 bg-transparent border border-red-600 rounded-lg transform transition hover:scale-105 hover:bg-red-600 hover:bg-opacity-20 shadow-lg">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-white">
+              Future Goals
+            </h3>
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+              Looking forward, I aim to leverage my front-end development skills and React expertise to contribute to innovative projects that make a significant impact.
+              I am constantly eager to learn new technologies and enhance my skills, aspiring to become a versatile and adaptive developer in the rapidly evolving tech landscape.
+              My goal is to keep pushing the boundaries of what's possible on the web and to bring my ideas to life through code.
+            </p>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <img src={futureImage} alt="Future Goals" className="w-full h-auto max-w-md" />
+          </div>
+        </div>
 
-    <div className='text-content md:w-1/2 pl-8  mb-8'>
-    <h1 className='text-[#d97706] text-center  pb-12 text-5xl pt-5 pr-8'>ABOUT ME </h1>
-    <hr />
-    <br />
-        <h1 className='text-[#d97706] text-4xl'>Hi there! I’m Jai Singh Bhati, a passionate Front-End Developer with a keen eye for detail and a love for creating beautiful, user-friendly web experiences.</h1>
-        <br />
-      <hr />
-<br />
-      <h1 className='text-black text-5xl ' > Qualification</h1>
-      <br />
-      <h1 className='text-black text-xl '> Currently pursuing my Master’s in Computer Applications (MCA) from Manipal University Jaipur.
-
-With a solid grounding in web technologies and a passion for crafting engaging digital experiences, I specialize in bringing designs to life through code. My journey in front-end development is driven by a blend of creativity and technical expertise, always aiming to deliver websites and applications that are both visually appealing and highly functional.</h1>
-<br />
-<hr />
-
-<br />
-<h1 className='text-4xl'>My educational path</h1>
-<br />
-
-<h1 className='text-xl'>Studying at Manipal University Jaipur has provided me with a comprehensive understanding of computer science principles and a deep dive into the world of web development. Through my coursework and projects, I’ve honed my skills in:
-</h1>
-<ul>
-<li className='text-xl'>*HTML & CSS: Crafting clean, semantic markup and responsive layouts.</li>
-<li className='text-xl'>*JavaScript: Building interactive and dynamic user interfaces with modern ES6+ features.</li>
-<li className='text-xl'>*Frameworks: Leveraging tools like React and Vue.js to create scalable, component-based applications.</li>
-<li></li>
-</ul>
-<br />
-
-<br />
-<h1 className='text-4xl'>Skills & Tools</h1>
-<br />
-<hr />
-<br />
-
-<ul>
-  <li className='text-xl'>*Languages: HTML, CSS, JavaScript (ES6+)</li>
-  <li className='text-xl'>*Frameworks & Libraries: React, Vue.js, SASS/SCSS, Bootstrap</li>
-  <li className='text-xl'>*Tools: Git, Webpack, VSCode, Figma</li>
-  <li className='text-xl'>*Other: Responsive Design, Cross-browser Compatibility, Accessibility (WCAG)</li>
-</ul>
-<br />
-
-<h1 className='text-4xl'>Beyond Coding</h1>
-<br />
-<hr />
-<br />
-
-
-<h1 className='text-xl'>
-When I’m not coding, you can find me Playing Cricket, "exploring new coffee shops around the city", "hiking", or "diving into the latest tech trends". I believe in continuous learning and am always seeking opportunities to grow both personally and professionally.
-</h1>
-<br />
-
-
-<hr />
-<br />
-<h1 className='text-4xl'>Let's Connect!</h1>
-{/* DONT FORGOT TO GIVE GITHUB LINK HERE  */}
-<h1 className='text-xl'>I’m always excited to connect with fellow developers, designers, or anyone interested in tech. Feel free to check out my work [link to portfolio or GitHub] or get in touch if you’d like to collaborate or just say hi!</h1>
-<br />
-
-    </div>
-
-   </section>
-   </div>
-
-      
-   
-
-    </div>
-  )
+        {/* Tools and Technologies Section */}
+        <div className="text-center">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-white">
+            Tools and Technologies
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center">
+            {/* HTML Logo */}
+            <div className="w-24 h-24 md:w-32 md:h-32 p-4 bg-transparent border border-gray-600 rounded-lg transform transition hover:scale-110 hover:bg-gray-600 hover:bg-opacity-20 shadow-lg">
+              <img src={htmlLogo} alt="HTML" className="w-full h-full object-contain" />
+            </div>
+             {/* CSS Logo */}
+             <div className="w-24 h-24 md:w-32 md:h-32 p-4 bg-transparent border border-gray-600 rounded-lg transform transition hover:scale-110 hover:bg-gray-600 hover:bg-opacity-20 shadow-lg">
+              <img src={cssLogo} alt="CSS" className="w-full h-full object-contain" />
+            </div>
+            {/* JavaScript Logo */}
+            <div className="w-24 h-24 md:w-32 md:h-32 p-4 bg-transparent border border-gray-600 rounded-lg transform transition hover:scale-110 hover:bg-gray-600 hover:bg-opacity-20 shadow-lg">
+              <img src={jsLogo} alt="JavaScript" className="w-full h-full object-contain" />
+            </div>
+            {/* Bootstrap Logo */}
+            <div className="w-24 h-24 md:w-32 md:h-32 p-4 bg-transparent border border-gray-600 rounded-lg transform transition hover:scale-110 hover:bg-gray-600 hover:bg-opacity-20 shadow-lg">
+              <img src={bootstrapLogo} alt="Bootstrap" className="w-full h-full object-contain" />
+            </div>
+            {/* React Logo */}
+            <div className="w-24 h-24 md:w-32 md:h-32 p-4 bg-transparent border border-gray-600 rounded-lg transform transition hover:scale-110 hover:bg-gray-600 hover:bg-opacity-20 shadow-lg">
+              <img src={reactLogo} alt="React" className="w-full h-full object-contain" />
+            </div>
+            {/* Tailwind CSS Logo */}
+            <div className="w-24 h-24 md:w-32 md:h-32 p-4 bg-transparent border border-gray-600 rounded-lg transform transition hover:scale-110 hover:bg-gray-600 hover:bg-opacity-20 shadow-lg">
+              <img src={tailwindLogo} alt="Tailwind CSS" className="w-full h-full object-contain" />
+            </div>
+            {/* Visual Studio Code Logo */}
+            <div className="w-24 h-24 md:w-32 md:h-32 p-4 bg-transparent border border-gray-600 rounded-lg transform transition hover:scale-110 hover:bg-gray-600 hover:bg-opacity-20 shadow-lg">
+              <img src={vscodeLogo} alt="Visual Studio Code" className="w-full h-full object-contain" />
+            </div>
+            {/* GitHub Logo */}
+            <div className="w-24 h-24 md:w-32 md:h-32 p-4 bg-transparent border border-gray-600 rounded-lg transform transition hover:scale-110 hover:bg-gray-600 hover:bg-opacity-20 shadow-lg">
+              <img src={githubLogo} alt="GitHub" className="w-full h-full object-contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default About
+export default About;

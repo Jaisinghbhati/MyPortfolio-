@@ -1,71 +1,72 @@
- import React from 'react'
- import photoo from '/src/project1.jpg'
- import pic from'/src/project2.jpg'
- import img from'/src/project3.jpg'
- 
- const Projects = () => {
-   return (
-     <div>
-       <div className='bg-[#d6d3d1] w-full py-[40px] '>
 
-       <section className='container mx-auto flex flex-col md:flex-row flex justify-center space-x-8'>
-        {/* link here also on # */}
-        <a href="https://github.com/Jaisinghbhati/ToDo-App">
-        <div>
-  <div className="max-w-sm rounded overflow-hidden shadow-lg">
-  <img className="w-full" src={photoo}/>
-  <div className="px-6 py-4">
-    <a  className="font-bold text-xl mb-2 text-[#292524] underline" href="https://github.com/Jaisinghbhati/ToDo-App" > TO DO APP </a>
-  
-    <p className="text-[#404040] text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-    </p>
-  </div>
- 
-</div>
-        </div>
-        </a>
-             {/* link here also on # */}
-        <a href="https://github.com/Jaisinghbhati/Weather-App">
-        <div>
-  <div className="max-w-sm rounded overflow-hidden shadow-lg">
-  <img className="w-full" src={pic} />
-  <div className="px-6 py-4">
-  <a  className="font-bold text-xl mb-2 text-[#292524] underline" href="https://github.com/Jaisinghbhati/Weather-App" >WEATHER APP</a>
-    <p className="text-[#404040] text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-    </p>
-  </div>
- 
-</div>
+import React from 'react';
 
-        </div>
-        </a>
 
-     {/* link here also on # */}
-     <a href="https://github.com/Jaisinghbhati/StikcyNotes-App">
-        <div>
-  <div className="max-w-sm rounded overflow-hidden shadow-lg">
-  <img className="w-full" src={img} />
-  <div className="px-6 py-4">
-  <a  className="font-bold text-xl mb-2 text-[#292524] underline" href="https://github.com/Jaisinghbhati/StikcyNotes-App" >StickyNotes App </a>
-    <p className="text-[#404040] text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-    </p>
-  </div>
- 
-</div>
+// Importing Images
+import project1 from '/src/project1.jpg';
+import project2 from '/src/project2.jpg';
+import project3 from '/src/project3.jpg';
 
-        </div>
-        </a>
-       
-        </section>
+const Project = () => {
+
+  return (
+<div>
+
+{/* Cards section */}
+    <div className="bg-[#CD8C8C] text-[#866C69] p-5 ">
+      <h2 className="text-6xl md:text-6xl  mb-6 flex justify-center p-3  font-['Debazneu']">My Projects</h2>
       
-       </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-[50px] lg:pl-[100px] ">
+        {/* Project 1 */}
   
-     </div>
-   )
- }
- 
- export default Projects
- 
+        <div className="bg-[#D4B8B1] p-1 rounded-lg shadow-lg flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-2xl w-[300px] h-[500px] ">
+          <div className="w-full h-64 md:h-80 lg:h-96 mb-4 bg-gray-700 rounded-lg overflow-hidden transition duration-500">
+            <img src={project1} alt="Project 1" className="w-full h-full " />
+          </div>
+         <a href="https://github.com/Jaisinghbhati/ToDo-App"> <h3 className="text-l font-semibold mb-2 transition duration-500 text-black transform hover:scale-105 underline ">TODO LIST PROJECT</h3></a>
+          <p className="text-black transition duration-500 transform hover:scale-105 p-2">A productivity-enhancing application built with React and Tailwind CSS, empowering users to manage tasks efficiently. Seamlessly organize, prioritize, and track tasks with intuitive features for a streamlined workflow.
+
+</p>
+        </div>
+      
+
+        {/* Project 2 */}
+      
+        <div className="bg-[#D4B8B1] p-1 rounded-lg shadow-lg flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-2xl w-[300px] h-[500px] ">
+          <div className="w-full h-64 md:h-80 lg:h-96 mb-4 bg-gray-700 rounded-lg overflow-hidden transition duration-500">
+            <img src={project2} alt="Project 2" className="w-full h-full  " />
+          </div>
+        <a href="https://github.com/Jaisinghbhati/Weather-App">  <h3 className="text-l font-semibold mb-2 transition duration-500 transform  text-black hover:scale-105 underline ">WEATHER APP</h3></a>
+          <p className="text-black transition duration-500 transform hover:scale-105 p-2">A weather forecasting tool crafted with React and Tailwind CSS, delivering real-time weather updates. Empowers users with accurate weather information, aiding in planning and decision-making with detailed forecasts at their fingertips..</p>
+        </div>
+
+
+        {/* Project 3 */}
+    
+   
+        <div className="bg-[#D4B8B1] p-1 rounded-lg shadow-lg flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-2xl w-[300px] h-[500px] ">
+          <div className="w-full h-64 md:h-80 lg:h-96 mb-4 bg-gray-700 rounded-lg overflow-hidden transition duration-500">
+            <img src={project3} alt="Project 3" className="w-full h-full  " />
+          </div>
+         <a href="https://github.com/Jaisinghbhati/StikcyNotes-App"> <h3 className="text-l font-semibold mb-2 transition duration-500  text-black transform hover:scale-105 underline ">STICKY NOTES</h3></a>
+          <p className="text-black transition duration-500 transform hover:scale-105 p-2">An interactive note-taking platform leveraging React, Tailwind CSS, and Framer Motion. Transforming digital note-taking with dynamic animations, users can effortlessly create, organize, and personalize their notes for enhanced productivity and creativity.</p>
+        </div>
+      
+      </div>
+      
+      
+   
+
+    
+
+
+   
+   
+    </div>
+    </div>
+  
+  );
+};
+
+
+export default Project;

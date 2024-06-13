@@ -5,24 +5,24 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-    <nav className="bg-black  ">
+    <nav className="bg-gray-900  ">
       <div className="max-w-7xl mx-auto px-5 p-4 ">
         <div className="flex justify-between ">
           <div className="flex items-center">
-            <Link to="/" className="text-white text-lg font-bold">
+            <Link to="/" className="text-white">
             MY PORTFOLIO.
             </Link>
           </div>
           <div className="hidden md:flex">
             <Link
               to="/"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm "
             >
               HOME
             </Link>
             <Link
               to="/About"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm "
             >
               ABOUT ME
             </Link>
@@ -31,13 +31,13 @@ const Header = () => {
 
             <Link
               to="/Projects"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm "
             >
               PROJECTS
             </Link>
             <Link
               to="/Contact"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm "
             >
               CONTACT ME
             </Link>
@@ -71,28 +71,28 @@ const Header = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
-              to="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              to="/"
+              className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base "
             >
               HOME
             </Link>
             <Link
-              to="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              to="/About"
+              className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base "
             >
               ABOUT
             </Link>
             <Link
-              to="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              to="/Projects"
+              className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base "
             >
-              SERVICES
+              PROJECT
             </Link>
             <Link
-              to="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              to="/Contact"
+              className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base "
             >
-              CONTACT
+               CONTACT ME 
             </Link>
           </div>
         </div>
@@ -103,3 +103,4 @@ const Header = () => {
 }
 
 export default Header
+

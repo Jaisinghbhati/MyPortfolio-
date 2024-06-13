@@ -4,9 +4,10 @@ import Header from './assets/Header'
 import Home from './assets/Pages/Home'
 import About from './assets/Pages/About'
 import Projects from './assets/Pages/Projects'
-
+import '/src/index.css'
 import Contact from './assets/Pages/Contact'
 import Footer from './assets/Footer';
+
 
 
 const App = () => {
@@ -23,7 +24,7 @@ const App = () => {
             <Route path='/Contact' element={<Contact/>}/> 
           </Routes>
           <Footer/>
-          
+        
         </div>
       </Router>
 

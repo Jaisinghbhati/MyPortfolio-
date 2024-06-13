@@ -6,9 +6,9 @@ const Form = () => {
 
 
 
-    <div className="min-h-screen flex items-center justify-center bg-black p-4  ">
+    <div className="min-h-screen flex items-center justify-center bg-[#73605B] p-4  ">
 
-      <div className="w-full max-w-md bg-transparent p-6 rounded-lg border border-red-500">
+      <div className="w-full max-w-md bg-transparent p-6 rounded-lg border border-[#FDF6F6]">
     
         <form action='https://formspree.io/f/mrgnwnlq' method='POST'>
           <h2 className="text-2xl font-bold mb-4 text-white">Feel Free To Talk</h2>
