@@ -9,8 +9,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-5 p-4 ">
         <div className="flex justify-between ">
           <div className="flex items-center">
-            <Link to="/" className="text-white">
-            MY PORTFOLIO.
+            <Link to="/" className="text-white custom-heading text-2xl font-bold ">
+            My portfolio.
             </Link>
           </div>
           <div className="hidden md:flex">
